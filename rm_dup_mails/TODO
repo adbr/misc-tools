@@ -1,0 +1,14 @@
+# vim: ft=rd
+
+== TODO
+
+
+== DONE
+
+* klasa App
+* usunac lock
+* polaczyc list_dup_ids i display_dup_ids
+* help: przyklady
+* opis w README
+* przetestować opcje
+* rakefile

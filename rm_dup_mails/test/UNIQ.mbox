@@ -1,0 +1,109 @@
+From bryt@mutant.genus.pl Wed Sep 10 12:56:14 2003 +0200
+Message-ID: <3F5F019A.1000505@genus.pl>
+Date: Wed, 10 Sep 2003 12:48:58 +0200
+From: Adam Bryt <bryt@genus.pl>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.4b) Gecko/20030507
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: ab@linart.pl
+Subject: test a
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+X-Keywords:                 
+X-UID: 33
+Status: RO
+Content-Length: 31
+Lines: 4
+
+test a
+test a
+>From zzz
+test a
+
+From bryt@konto.pl  Sat Nov 15 18:44:45 2003
+Return-Path: <bryt@konto.pl>
+Delivered-To: bryt@amber.localdomain
+Received: by amber.localdomain (Postfix, from userid 1000)
+	id B0BB135282; Sat, 15 Nov 2003 18:44:45 +0100 (CET)
+Date: Sat, 15 Nov 2003 18:44:45 +0100
+From: Adam Bryt <bryt@konto.pl>
+To: Adam Bryt <bryt@amber.localdomain>
+Subject: test b
+Message-ID: <20031115174445.GA3892@amber.localdomain>
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Disposition: inline
+Content-Transfer-Encoding: 8bit
+User-Agent: Mutt/1.4.1i
+Status: RO
+Content-Length: 74
+Lines: 4
+
+ąąśśęśśś
+-- 
+Adam Bryt <bryt@konto.pl>
+http://www.genus.pl/~bryt/
+
+From ab@imp2.linart.pl Sat Oct  4 16:57:17 2003 +0200
+Message-ID: <3F7EE097.7060006@linart.pl>
+Date: Sat, 04 Oct 2003 17:00:39 +0200
+From: Adam Bryt <ab@linart.pl>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.4b) Gecko/20030507
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To:  bryt@mutant.genus.pl
+Subject: test c
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+X-Keywords:                 
+X-UID: 86
+Status: RO
+Content-Length: 48
+Lines: 4
+
+aaa bbb ccc
+aaa bbb ccc
+aaa bbb ccc
+aaa bbb ccc
+
+From bryt@konto.pl  Sat Dec  6 11:56:03 2003
+Return-Path: <bryt@konto.pl>
+Delivered-To: bryt@amber.localdomain
+Received: by amber.localdomain (Postfix, from userid 1000)
+	id 4EEA835282; Sat,  6 Dec 2003 11:56:03 +0100 (CET)
+Date: Sat, 6 Dec 2003 11:56:03 +0100
+From: Adam Bryt <bryt@konto.pl>
+To: Adam Bryt <bryt@amber.localdomain>
+Subject: test d
+Message-ID: <20031206105603.GA13177@amber.localdomain>
+Mime-Version: 1.0
+Content-Type: multipart/mixed; boundary="PNTmBPCT7hxwcZjr"
+Content-Disposition: inline
+User-Agent: Mutt/1.4.1i
+Status: RO
+Content-Length: 445
+Lines: 23
+
+
+--PNTmBPCT7hxwcZjr
+Content-Type: text/plain; charset=utf-8
+Content-Disposition: inline
+
+test
+-- 
+Adam Bryt <bryt@konto.pl>
+http://www.genus.pl/~bryt/
+
+--PNTmBPCT7hxwcZjr
+Content-Type: text/plain; charset=utf-8
+Content-Disposition: attachment; filename="data.txt"
+
+To jest plik testowy.
+
+--PNTmBPCT7hxwcZjr
+Content-Type: text/plain; charset=utf-8
+Content-Disposition: attachment; filename="data.txt"
+
+To jest plik testowy.
+
+--PNTmBPCT7hxwcZjr--

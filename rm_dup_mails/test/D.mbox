@@ -1,0 +1,41 @@
+From bryt@konto.pl  Sat Dec  6 11:56:03 2003
+Return-Path: <bryt@konto.pl>
+Delivered-To: bryt@amber.localdomain
+Received: by amber.localdomain (Postfix, from userid 1000)
+	id 4EEA835282; Sat,  6 Dec 2003 11:56:03 +0100 (CET)
+Date: Sat, 6 Dec 2003 11:56:03 +0100
+From: Adam Bryt <bryt@konto.pl>
+To: Adam Bryt <bryt@amber.localdomain>
+Subject: test d
+Message-ID: <20031206105603.GA13177@amber.localdomain>
+Mime-Version: 1.0
+Content-Type: multipart/mixed; boundary="PNTmBPCT7hxwcZjr"
+Content-Disposition: inline
+User-Agent: Mutt/1.4.1i
+Status: RO
+Content-Length: 445
+Lines: 23
+
+
+--PNTmBPCT7hxwcZjr
+Content-Type: text/plain; charset=utf-8
+Content-Disposition: inline
+
+test
+-- 
+Adam Bryt <bryt@konto.pl>
+http://www.genus.pl/~bryt/
+
+--PNTmBPCT7hxwcZjr
+Content-Type: text/plain; charset=utf-8
+Content-Disposition: attachment; filename="data.txt"
+
+To jest plik testowy.
+
+--PNTmBPCT7hxwcZjr
+Content-Type: text/plain; charset=utf-8
+Content-Disposition: attachment; filename="data.txt"
+
+To jest plik testowy.
+
+--PNTmBPCT7hxwcZjr--

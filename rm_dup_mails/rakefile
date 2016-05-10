@@ -1,0 +1,21 @@
+# vim: ft=ruby
+
+BINDIR = File.expand_path("~/bin")
+
+task :tags do
+  sh "exctags -R ."
+end
+
+task :test do
+  cd "test" do
+    sh "ruby ts.rb"
+  end
+end
+
+task :install do
+  install "rm_dup_mails.rb", BINDIR, :mode => 0755
+end
+
+task :clean do
+  rm_f "tags"
+end

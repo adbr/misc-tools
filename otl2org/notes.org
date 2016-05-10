@@ -33,14 +33,14 @@ immediately enclosing headings.
 
 *** headings
 
-tekst poprzedzony przez 0 lub wiêcej znaków tabulacji
+tekst poprzedzony przez 0 lub wiÄ™cej znakÃ³w tabulacji
 /^(\t*)([^\t]+)$/
-  - $1 - ilo¶æ znaków \t w $1 to poziom nag³ówka, 0 - pierwszy, 1 - drugi, ...
-  - $2 - tre¶æ nag³ówka
+  - $1 - iloÅ›Ä‡ znakÃ³w \t w $1 to poziom nagÅ‚Ã³wka, 0 - pierwszy, 1 - drugi, ...
+  - $2 - treÅ›Ä‡ nagÅ‚Ã³wka
 
 *** plain text
 
-tekst zaczynaj±cy siê od 0 lub wiêcej spacji i znaku |
+tekst zaczynajÄ…cy siÄ™ od 0 lub wiÄ™cej spacji i znaku |
 /^(\t*|)(.*)$/
   - $1 - zignoruj
   - $2 - wiersz tekstu
@@ -59,21 +59,21 @@ zignoruj
 
 * projekt skryptu
 
-- Skrypt otl2org.rb jest unixowym filtrem: je¶li ma parametry to
-  powinny to byæ nazwy plików, z których s± pobierane dane, a wyniki
-  s± drukowane na stdout; je¶li brak argumentów to skrypt czyta dane
-  ze strumienia stdin i wysy³a wynik na stdout.
+- Skrypt otl2org.rb jest unixowym filtrem: jeÅ›li ma parametry to
+  powinny to byÄ‡ nazwy plikÃ³w, z ktÃ³rych sÄ… pobierane dane, a wyniki
+  sÄ… drukowane na stdout; jeÅ›li brak argumentÃ³w to skrypt czyta dane
+  ze strumienia stdin i wysyÅ‚a wynik na stdout.
 
-- W jêzyku Ruby tak± funkcjonalno¶æ mo¿na osi±gn±æ dziêki ARGF
+- W jÄ™zyku Ruby takÄ… funkcjonalnoÅ›Ä‡ moÅ¼na osiÄ…gnÄ…Ä‡ dziÄ™ki ARGF
 
   ARGF.each {|line| ...}
 
-- Skrypt bêdzie przetwarza³ niezale¿nie kolejne wiersze.
+- Skrypt bÄ™dzie przetwarzaÅ‚ niezaleÅ¼nie kolejne wiersze.
 
-- Nie potrzeba robiæ parsingu ca³ego pliku (drzewa); wystarczy
-  konwertowaæ poszczególne wiersze.
+- Nie potrzeba robiÄ‡ parsingu caÅ‚ego pliku (drzewa); wystarczy
+  konwertowaÄ‡ poszczegÃ³lne wiersze.
 
-- Jak zorganizowaæ testy?
-  - testowaæ funkcjê dzia³aj±c± na pojedynczym wierszu
-  - testowaæ wywo³anie ca³ego skryptu dla pliku testowego i badaæ plik
+- Jak zorganizowaÄ‡ testy?
+  - testowaÄ‡ funkcjÄ™ dziaÅ‚ajÄ…cÄ… na pojedynczym wierszu
+  - testowaÄ‡ wywoÅ‚anie caÅ‚ego skryptu dla pliku testowego i badaÄ‡ plik
     wynikowy

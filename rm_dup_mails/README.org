@@ -1,0 +1,18 @@
+# $Id$
+
+* Usuwanie powtarzających się maili z mailboxu w formacie mbox.
+
+- Do wykrywania duplikatow uzywa message_id.
+- W trybie batch (-b) lockuje przetwarzany plik.
+- Wymaga biblioteki 'rmail'
+
+** Instalacja
+
+- wymaga biblioteki 'rake'
+- edycja pliku rakefile
+
+: rake install
+
+** Przyklady uzycia
+
+: ruby rm_dup_mails.rb -h

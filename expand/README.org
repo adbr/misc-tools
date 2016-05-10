@@ -1,0 +1,3 @@
+** expand
+
+Skrypt expand zamienie tabulacje na spacje i odwrotnie.

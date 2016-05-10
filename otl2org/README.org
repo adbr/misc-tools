@@ -1,0 +1,20 @@
+# $Id$
+
+* otl2org
+
+Filtr konwertuj±cy plik z formatu 'The Vim Outliner' do 'org-mode'.
+
+** Instalacja
+
+Test:
+
+: rake test
+
+Skopiowaæ rêcznie do katalogu bin:
+
+: cp otl2org.rb ~/bin
+: chmod +x ~/bin/otl2org.rb
+
+lub sprawdziæ BINDIR w Rakefile i wykonaæ:
+
+: rake install

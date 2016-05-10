@@ -1,0 +1,79 @@
+# $Id$
+
+* format pliku otl (The Vim Outliner)
+
+** z dokumentacji tvo
+
+A TVO outline consists of:
+
+- Headings -- Text with 0 or more tabs preceding it. These are by default
+  displayed in color, and logically include text and headings that are more
+  indented. If the tabs are immediately followed by a '+' character, then that
+  heading will be extracted along with the text when you do a \T
+  |tvo-<LocalLeader>T|.
+
+- Plain text -- Text preceded by 0 or more tabs and the '|' character.
+
+- File links -- File names enclosed in square brackets like [README.otl]. You
+  can navigate to these files
+
+- Vim tags -- Regular vim tags (which use a |tags| file), enclosed in square
+  brackets like [tvo-outlines]. If you have |Thlnk| installed, these can also
+  use its style of tags.
+
+- Vim command tags -- Vim |commands| enclosed in square brackets with a leading
+  colon, like [:he tags]
+
+You can choose at what level headings become hidden.
+
+You can choose to fold all the headings and see just text blocks with their
+immediately enclosing headings.
+
+** moja interpretacja
+
+*** headings
+
+tekst poprzedzony przez 0 lub wiêcej znaków tabulacji
+/^(\t*)([^\t]+)$/
+  - $1 - ilo¶æ znaków \t w $1 to poziom nag³ówka, 0 - pierwszy, 1 - drugi, ...
+  - $2 - tre¶æ nag³ówka
+
+*** plain text
+
+tekst zaczynaj±cy siê od 0 lub wiêcej spacji i znaku |
+/^(\t*|)(.*)$/
+  - $1 - zignoruj
+  - $2 - wiersz tekstu
+
+*** file links
+
+zignoruj
+
+*** vim tags
+
+zignoruj
+
+*** vim command tags
+
+zignoruj
+
+* projekt skryptu
+
+- Skrypt otl2org.rb jest unixowym filtrem: je¶li ma parametry to
+  powinny to byæ nazwy plików, z których s± pobierane dane, a wyniki
+  s± drukowane na stdout; je¶li brak argumentów to skrypt czyta dane
+  ze strumienia stdin i wysy³a wynik na stdout.
+
+- W jêzyku Ruby tak± funkcjonalno¶æ mo¿na osi±gn±æ dziêki ARGF
+
+  ARGF.each {|line| ...}
+
+- Skrypt bêdzie przetwarza³ niezale¿nie kolejne wiersze.
+
+- Nie potrzeba robiæ parsingu ca³ego pliku (drzewa); wystarczy
+  konwertowaæ poszczególne wiersze.
+
+- Jak zorganizowaæ testy?
+  - testowaæ funkcjê dzia³aj±c± na pojedynczym wierszu
+  - testowaæ wywo³anie ca³ego skryptu dla pliku testowego i badaæ plik
+    wynikowy

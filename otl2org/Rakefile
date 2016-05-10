@@ -1,0 +1,34 @@
+# -*- mode: ruby -*-
+# $Id$
+
+BINFILES = %w[otl2org.rb]
+BINDIR = "~/bin"
+VERBOSE = true
+
+task :default => [:test]
+
+desc "Instalacja skryptu"
+task :install do
+  dir = File.expand_path(BINDIR)
+  BINFILES.each do |file|
+    cp file, dir, :verbose => VERBOSE
+    chmod 0755, File.join(dir, file), :verbose => VERBOSE
+  end
+end
+
+desc "Testy"
+task :test do
+  Rake::FileList["test_*"].each do |file|
+    sh "ruby #{file}"
+  end
+end
+
+desc "Clean"
+task :clean do
+  rm "TAGS", :verbose => VERBOSE
+end
+
+desc "Tags"
+task :tags do
+  sh "exctags -e -R ."
+end

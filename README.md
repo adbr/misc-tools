@@ -1,2 +1,0 @@
-# misc-tools
-Różne narzędzia
